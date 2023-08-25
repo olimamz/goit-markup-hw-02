@@ -92,14 +92,21 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-
-.btn-in-hero:hover {
+.btn-order {
+  text-align: left;
+  color: var(--white);
+  background-color: var(--iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+.btn-order:hover {
   cursor: pointer;
 }
-.btn-in-hero:focus {
-  cursor: pointer;
+.btn-order:focus {
+  background-color: var(--ocean);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.btn-in-hero:active {
+.btn-in-hero:focus .btn-in-hero:active {
   background-color: var(--button-color-hover);
   cursor: pointer;
 }
@@ -118,11 +125,11 @@ body {
   cursor: pointer;
 }
 .btn:focus {
-  cursor: pointer;
 }
 .btn:active {
   background-color: var(--button-color-hover);
   color: var(--background);
+  cursor: pointer;
 }
 
 .footertext {
